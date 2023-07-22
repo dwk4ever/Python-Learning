@@ -70,6 +70,10 @@ Select option: """))
        for i, todo in enumerate(todo_list,start=1):
          print(Fore.YELLOW + f" {i}. {todo}")
 
+  elif user_input == 5:
+    print(Fore.RED + "Exiting...")
+    exit(0)
+
 
 
       
