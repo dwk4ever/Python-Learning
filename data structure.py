@@ -8,13 +8,7 @@ colorama.init()
 
 todo_list = []
 user_input = 0
-#Display the user current todo list
-if len (todo_list) == 0:
-  print(Fore.RED + "No to-dos yet!")
-else:
-  print(Fore.GREEN + "To-dos:")
-  for todo in todo_list:
-    print(Fore.BLUE + todo)
+
 
 #main program loop 
 while True:
@@ -62,7 +56,19 @@ Select option: """))
       if todo_index < 0 or todo_index > len(todo_list):
         print(Fore.RED + "the todo you are trying to edit is not in the list!")
       else:
-        todo_to_update= todo_list[todo_index]
+        todo_update = input(Fore.GREEN + "Enter your todo update: ")
+        todo_list[todo_index] = todo_update
+        print(Fore.GREEN + "Todo updated successfully!")
+
+
+  elif user_input == 4:
+    if len (todo_list) == 0:
+      print(Fore.RED + "No todo's yet!")
+    
+    else:
+       print(Fore.GREEN + "Todo List:")
+       for i, todo in enumerate(todo_list,start=1):
+         print(Fore.YELLOW + f" {i}. {todo}")
 
 
 

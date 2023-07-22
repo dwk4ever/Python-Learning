@@ -1,9 +1,7 @@
-
-# name = input('What is your name?:')
-
-# if len(name) < 3:
-#     print(f'{name} must be at least 3 characters long')
-# elif len(name) > 50:
-#     print(f'{name} can be a maximum of 50 characters')
-# elif len(name) >= 3 and len(name) <= 50:
-#     print(f'{name} looks good!')
+#Display the user current todo list
+# if len (todo_list) == 0:
+#   print(Fore.RED + "No to-dos yet!")
+# else:
+#   print(Fore.GREEN + "To-dos:")
+#   for todo in todo_list:
+#     print(Fore.BLUE + f" {todo}")
