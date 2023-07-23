@@ -1,7 +1,11 @@
-#Display the user current todo list
-# if len (todo_list) == 0:
-#   print(Fore.RED + "No to-dos yet!")
+
+# weight = int(input('Weight: ') )
+# unit = input('(L)bs or (K)g: ')
+
+# if unit.upper() == 'L':
+#     converted_weight = (weight)* 0.45
+#     print(f'your weight is {converted_weight} kilos')
+
 # else:
-#   print(Fore.GREEN + "To-dos:")
-#   for todo in todo_list:
-#     print(Fore.BLUE + f" {todo}")
+#     converted_weight = (weight) // 0.45
+#     print(f'your weight is {converted_weight} pounds')
