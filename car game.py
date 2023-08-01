@@ -1,5 +1,4 @@
 # A car game
- 
 command = ''
 started = False
 

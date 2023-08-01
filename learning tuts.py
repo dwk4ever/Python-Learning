@@ -97,16 +97,4 @@
 # elif len(name) >= 3 and len(name) <= 50:
 #     print(f'{name} looks good!')
 
-  if not user_cart:
-        print("Your cart is empty. Nothing to checkout.")
-        return
-
-    total_cart_price = sum(store_items[next(i for i, x in enumerate(store_items) if x["name"] == item)]["price"] * quantity for item, quantity in user_cart.items())
-    print(f"Total Cart Price: ${total_cart_price:.2f}")
-    user_account_balance = float(input("Enter amount to pay: "))
-    if user_account_balance >= total_cart_price:
-        change = user_account_balance - total_cart_price
-        print(f"Thank you for your purchase! Your change: ${change:.2f}")
-        user_cart.clear()  # Empty the cart after successful checkout
-    else:
-        print("Insufficient balance. Please add more funds or remove items from your cart.")
+ 

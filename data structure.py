@@ -4,10 +4,9 @@ from colorama import Fore, Back, Style
 
 colorama.init()
 
-
-
 todo_list = []
 user_input = 0
+ 
 
 
 #main program loop 
