@@ -27,7 +27,7 @@ def user_options(user_input):
          check_balance()
     elif user_input == 3:
         print(Fore.RED + "Exiting program...")
-        return  # Exit the function instead of using 'pass'
+        return 
     else:
         print(Fore.RED + "Invalid option!")
 
