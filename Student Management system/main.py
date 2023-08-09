@@ -157,6 +157,27 @@ def update_student():
     else:
                 print(Fore.RED + Style.BRIGHT + "Student not found in database")
 
+
+
+#function to delete student info
+def delete_student():
+     print(Fore.RED + Style.BRIGHT + "***** Deleting student info *****")
+     student_id = input(Fore.BLUE + Style.BRIGHT + "Enter student ID: ")
+     
+     # Print the entered student ID and student IDs in the database
+     print("Entered student ID:", student_id)
+     print("Student IDs in the database:", [student.student_id for student in student_database])
+
+     if is_student_in_database(student_id):
+          for student in student_database:
+              if student.student_id == student_id:
+                  student_database.remove(student)
+                  print(Fore.LIGHTYELLOW_EX + Style.BRIGHT + "Student deleted successfully")
+                  break
+              else:
+                  print(Fore.RED + Style.BRIGHT + "Student not found in database")
+                  exit()
+
     
 
 welcome_screen()
