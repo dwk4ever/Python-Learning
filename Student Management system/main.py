@@ -155,7 +155,7 @@ def update_student():
                     print(Fore.RED + Style.BRIGHT + "Invalid option")
                     
     else:
-                print(Fore.RED + Style.BRIGHT + "Student not found")
+                print(Fore.RED + Style.BRIGHT + "Student not found in database")
 
     
 
